@@ -1,12 +1,32 @@
 body {
-  margin: 0;
+  margin: -5px 0 0 0 ;
   padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h4 {
+  font-size: 23px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.display-block {
+  display: block;
+}
+
 .flex {
   display: flex;
-  justify-content: space-between;
+  align-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .two-from-three {
@@ -19,9 +39,11 @@ body {
 
 .logo-block {
   background-color: #e9eae2;
-  height: 80vh;
-  padding-left: 9%;
-  overflow: hidden;
+  height: 36vw;
+  background-image: url(images/img.png);
+  background-size: 43vw;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .logo-text {
@@ -29,21 +51,21 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: #393d3c;
-  max-width: 9%;
+  max-width: 8%;
   margin-bottom: 6%;
+  margin-left: 15%;
 }
 
 .logo {
-  width: 23%;
-  max-width: 180px;
-  height: auto;
-  margin-top: 5%;
+  width: 10vw;
+  margin-top: 7%;
+  margin-left: 15%;
 }
 
 .social-network {
   color: #7acec3;
   list-style-type: none;
-  padding-left: 3%;
+  margin-left: 17%;
 }
 
 .icon {
@@ -54,7 +76,6 @@ body {
 
 .header-image {
   width: 66%;
-  float: right;
   margin-right: 5%;
 }
 
@@ -64,13 +85,15 @@ body {
   margin-bottom: 24%;
   border: 3px solid white;
   padding: 9% 8%;
-  width: 7%;
+  width: 3vw;
 }
 
 .menu-block {
-  background-image: url("images/bg-header.jpg");
+  background-image: url(images/bg-header.jpg);
   background-size: cover;
-  height: 80vh;
+  height: 36vw;
+  background-repeat: no-repeat;
+  background-position: 0 1px;
 }
 
 .contact {
@@ -92,3 +115,399 @@ body {
   max-width: 25%;
   margin-left: 26%;
 }
+
+/* Start Main content*/
+
+.first-block {
+  height: 30vw;
+  background: url(images/projects.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 42%;
+  background-position: -2px -2px;
+}
+
+.first-block .fa-arrow-right {
+  color: #fff;
+  margin-top: 30%;
+  font-size: 30px;
+  margin-left: 34%;
+}
+
+.first-block .bold-text {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.first-block .description {
+  color: #fff;
+  width: 71px;
+  margin-bottom: 12%;
+  margin-left: 41%;
+}
+
+.first-block h2 {
+  color: #fff;
+  font-size: 54px;
+  text-transform: uppercase;
+  margin-left: 49%;
+}
+
+.second-block {
+  height: 29.8vw;
+  width: 58%;
+  background-image: url(images/fondue.jpg);
+  background-repeat: no-repeat;
+  background-size: 35vw;
+  background-position: 45px;
+}
+
+.second-block h4 {
+  margin-top: 16%;
+  margin-left: 16%;
+  margin-bottom: 4%;
+}
+
+.second-block .description {
+  margin-left: 16%;
+}
+
+.second-block p:last-of-type {
+  margin-bottom: 11%;
+}
+
+.second-block .uppercase-text {
+  margin-left: 16%;
+  margin-bottom: 16%;
+}
+
+.second-block .likes {
+  margin-left: 23%;
+}
+
+.third-block {
+  height: 31vw;
+  background-image: url(images/louis.jpg);
+  background-size: 20vw;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+
+.third-block .third-block-align-text {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 16%;
+}
+
+.third-block a {
+  color: #fff;
+}
+
+.third-block h4 {
+  margin-bottom: 8%;
+}
+
+.third-block p:last-of-type {
+  margin-bottom: 14%;
+}
+
+.third-block .uppercase-text {
+  margin-bottom: 13%;
+}
+
+.third-block .likes {
+  margin-left: 19%;
+}
+
+.third-block .fa-heart {
+  margin-bottom: 3%;
+}
+
+.fourth-block {
+  height: 31vw;
+  background-image: url(images/chairs.jpg);
+  background-repeat: no-repeat;
+  background-size: 51vw;
+  justify-content: center;
+  width: 70%;
+}
+
+.fourth-block .left-flex-four-block {
+  margin: 11% 10% 0 36%;
+}
+
+.fourth-block h4 {
+  margin-bottom: 14%;
+}
+
+.fourth-block .right-flex-four-block {
+  margin-top: 11%;
+  width: 7vw;
+}
+
+.fourth-block .likes {
+  margin-left: 44%;
+}
+
+.fourth-block .fa-heart {
+  margin-bottom: 5%;
+}
+
+.fourth-block .uppercase-text {
+  margin-bottom: 18%;
+}
+
+.fifth-block {
+  height: 20vw;
+  background-image: url(images/sesann.jpg);
+  background-repeat: no-repeat;
+  background-size: 51vw;
+  width: 70%;
+  background-position-x: center;
+  align-items: center;
+}
+
+.fifth-block .left-flex-fifth-block {
+  margin: 24% 10% 0 20%;
+}
+
+.fifth-block .right-flex-fifth-block {
+  margin-top: 23%;
+  width: 15vw;
+}
+
+.fifth-block a {
+  display: inline;
+}
+
+.fifth-block .uppercase-text {
+  margin-right: 25%;
+}
+
+.fifth-block .fa-arrow-right {
+  margin-right: 4%;
+}
+
+.fifth-block .fa-heart {
+  margin-bottom: 4%;
+}
+
+.fifth-block .red-number {
+  margin-left: 74%;
+}
+
+.sixth-block {
+  height: 20vw;
+  background-image: url(images/alessi.jpg);
+  background-repeat: no-repeat;
+  background-size: 20vw;
+  width: 30%;
+}
+
+.sixth-block .sixth-block-align-text {
+  margin-top: 27%;
+  margin-left: 43%;
+}
+
+.sixth-block h4 {
+  margin-bottom: 10%;
+  margin-left: 17%;
+}
+
+.sixth-block .description {
+  margin-left: 17%;
+}
+
+.sixth-block p:last-of-type {
+  margin-bottom: 21%;
+}
+
+.sixth-block .fa-arrow-right {
+  margin-right: 7%;
+}
+
+.sixth-block .uppercase-text {
+  margin-bottom: 10%;
+}
+
+.sixth-block .likes {
+  margin-left: 34%;
+}
+
+.sixth-block .fa-heart {
+  margin-bottom: 3%;
+}
+
+.first-plate {
+  background-position: right;
+  background-image: url(images/potter.jpg);
+  background-repeat: no-repeat;
+  background-size: 27vw;
+  background-color: #dfe0d9;
+  height: 16vw;
+}
+
+.first-plate h4 {
+  padding: 7% 0 2% 7%;
+}
+
+.first-plate .description {
+  margin-left: 7%;
+}
+
+.first-plate #lowercase-text {
+  margin-left: 7%;
+  margin-bottom: 2%;
+}
+
+.first-plate .uppercase-text {
+  margin-left: 7%;
+  margin-bottom: 4%;
+}
+
+.first-plate .likes {
+  margin-left: 16%;
+  margin-bottom: 1%;
+}
+
+.description {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.bold-text {
+  font-weight: 400;
+}
+
+#lowercase-text {
+  letter-spacing: 0.3px;
+  font-size: 12px;
+  width: 30%;
+  font-weight: 100;
+}
+
+.fa-arrow-right {
+  color: #ebb240;
+  margin-right: 1.5%;
+}
+
+.fa-heart {
+  font-size: 25px;
+}
+
+.uppercase-text {
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.red-number {
+  color: #ff0000;
+  font-size: 11px;
+}
+
+.second-plate {
+  height: 31vw;
+  background-image: url(images/tabano.jpg);
+  background-repeat: no-repeat;
+  background-size: 29vw;
+  background-color: #e9eae2;
+  background-position: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.second-plate h4 {
+  margin-bottom: 8%;
+}
+
+.second-plate .left-flex-second-plate {
+  margin-bottom: 6%;
+  margin-right: 7%;
+}
+
+.second-plate .right-flex-second-plate {
+  margin-bottom: 11%;
+}
+
+.second-plate .fa-arrow-right {
+  margin-right: 7%;
+}
+
+.second-plate .uppercase-text {
+  margin-right: 6%;
+}
+
+.second-plate .red-number {
+  margin-left: 85%;
+}
+
+.third-plate {
+  height: 18vw;
+  background-image: url(images/fiji.jpg);
+  background-repeat: no-repeat;
+  background-size: 34vw;
+  background-position: left;
+}
+
+.third-plate .third-plate-align-text {
+  padding-left: 55%;
+  padding-top: 11%;
+}
+
+.third-plate h4 {
+  margin-bottom: 10%;
+}
+
+.third-plate p:last-of-type {
+  margin-bottom: 14%;
+}
+.third-plate .uppercase-text {
+  margin-bottom: 14%;
+}
+
+.third-plate .fa-arrow-right {
+  margin-right: 4%;
+}
+
+.third-plate .likes {
+  margin-left: 34%;
+}
+
+.third-plate .fa-heart {
+  margin-bottom: 3%;
+}
+
+.fourth-plate {
+  background: url(images/timeline.jpg);
+  height: 34vw;
+  background-repeat: no-repeat;
+  background-size: 34vw;
+}
+
+.fourth-plate h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 12%;
+  padding-left: 20%;
+  padding-bottom: 2%;
+}
+
+.fourth-plate .fa-arrow-right {
+  color: #fff;
+  font-size: 29px;
+  margin-left: 14%;
+}
+
+.fourth-plate p {
+  font-weight: 100;
+  margin-top: -3%;
+  max-width: 35px;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20%;
+}
+
+
