@@ -36,11 +36,11 @@ h4 {
 }
 
 .two-from-three {
-  width: calc((100%/3)* 2);
+  width: 66%;
 }
 
 .one-from-three {
-  width: calc(100%/3);
+  width: 34%;
 }
 
 .logo-block {
@@ -411,7 +411,7 @@ h4 {
 }
 
 .second-plate {
-  height: 31vw;
+  height: 27vw;
   background-image: url(images/tabano.jpg);
   background-repeat: no-repeat;
   background-size: 29vw;
@@ -484,7 +484,7 @@ h4 {
 
 .fourth-plate {
   background: url(images/timeline.jpg);
-  height: 34vw;
+  height: 20vw;
   background-repeat: no-repeat;
   background-size: 34vw;
 }
@@ -663,6 +663,7 @@ h4 {
 
 .info-plate .icon {
   font-size: 19px;
+  color: #fd5000;
 }
 
 .info-plate .info-block-one img {
@@ -701,7 +702,7 @@ h4 {
   margin-top: 9%;
 }
 
-.two-from-three img {
+.news-plate .two-from-three img {
   width: 26vw;
   margin-bottom: 5%;
 }
@@ -746,4 +747,76 @@ h4 {
   font-size: 15px;
   margin-left: 85%;
   color: #fd5000;
+}
+
+.footer-section {
+  background-color: #e9eae2;
+  height: 42vw;
+}
+
+.footer-left {
+  width: 50%;
+  background-image: url(images/map.jpg);
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  height: 42vw;
+}
+
+.footer-right {
+  width: 50%;
+}
+
+.footer-right .flex {
+  justify-content: center;
+}
+
+.footer-address {
+  text-transform: uppercase;
+  margin-top: 19%;
+}
+
+.footer-address .address {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 25%;
+  margin: 0;
+  margin-bottom: 4%;
+}
+
+.footer-address .phone {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 32%;
+  margin: 0;
+}
+
+.footer-logo {
+  margin-top: 19%;
+}
+
+.footer-logo img {
+  width: 10vw;
+}
+
+.footer-logo .logo-text {
+  margin-left: 0;
+  margin-bottom: 35%;
+}
+
+.footer-logo .icon {
+  font-size: 30px;
+}
+
+.footer-logo .social-network {
+  margin-bottom: 62%;
+}
+
+.footer-right .footer-info {
+  margin-left: 17%;
+}
+
+.footer-right .fa-copyright {
+  margin-right: 1%;
 }
