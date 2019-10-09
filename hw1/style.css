@@ -69,9 +69,12 @@ h4 {
 }
 
 .social-network {
-  color: #7acec3;
   list-style-type: none;
   margin-left: 17%;
+}
+
+.social-icon {
+  color: #7acec3;
 }
 
 .icon {
@@ -128,7 +131,7 @@ h4 {
   height: 30vw;
   background: url(images/projects.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 28vw;
   width: 42%;
   background-position: -2px -2px;
 }
@@ -151,13 +154,18 @@ h4 {
 
 .first-block .description {
   color: #fff;
-  width: 71px;
-  margin-bottom: 12%;
+  width: 73px;
   margin-left: 41%;
+  margin-bottom: 0.6%;
+  display: block;
+}
+
+.first-block a:last-of-type {
+   margin-bottom: 19%;
 }
 
 .second-block {
-  height: 29.8vw;
+  height: 30vw;
   width: 58%;
   background-image: url(images/fondue.jpg);
   background-repeat: no-repeat;
@@ -186,6 +194,10 @@ h4 {
 
 .second-block .likes {
   margin-left: 23%;
+}
+
+.second-block .likes .fa-heart {
+  margin-bottom: 1%;
 }
 
 .third-block {
@@ -253,11 +265,15 @@ h4 {
 }
 
 .fourth-block .fa-heart {
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
 .fourth-block .uppercase-text {
   margin-bottom: 18%;
+}
+
+.fourth-block .uppercase-text .fa-arrow-right {
+  margin-right: 5%;
 }
 
 .fifth-block {
@@ -268,15 +284,21 @@ h4 {
   width: 70%;
   background-position-x: center;
   align-items: center;
+  justify-content: space-around;
 }
 
 .fifth-block .left-flex-fifth-block {
-  margin: 24% 10% 0 20%;
+  margin: 27% 0 0 14%;
+}
+
+.fifth-block .left-flex-fifth-block h4 {
+  margin-bottom: 7%;
 }
 
 .fifth-block .right-flex-fifth-block {
-  margin-top: 23%;
+  margin-top: 29%;
   width: 15vw;
+  margin-right: 11%;
 }
 
 .fifth-block a {
@@ -345,7 +367,7 @@ h4 {
   background-position: right;
   background-image: url(images/potter.jpg);
   background-repeat: no-repeat;
-  background-size: 27vw;
+  background-size: 30vw;
   background-color: #dfe0d9;
   height: 16vw;
 }
@@ -386,7 +408,7 @@ h4 {
 #lowercase-text {
   letter-spacing: 0.3px;
   font-size: 12px;
-  width: 30%;
+  width: 27%;
   font-weight: 100;
 }
 
@@ -475,7 +497,7 @@ h4 {
 }
 
 .third-plate .likes {
-  margin-left: 34%;
+  margin-left: 23%;
 }
 
 .third-plate .fa-heart {
@@ -504,20 +526,25 @@ h4 {
   margin-left: 14%;
 }
 
-.fourth-plate p {
+.fourth-plate .year {
   font-weight: 100;
-  margin-top: -3%;
   max-width: 35px;
   color: #fff;
   font-size: 18px;
   margin-left: 20%;
+  display: block;
+}
+
+.fourth-plate #margin-top {
+  margin-top: -3%;
 }
 
 .studio-block-one {
-  height: 35vw;
+  height: 36vw;
   background-image: url(images/studio.jpg);
-  background-size: 33vw;
+  background-size: 34vw;
   background-repeat: no-repeat;
+  background-position-y: -3px;
 }
 
 .studio-block-one h2 {
@@ -527,7 +554,7 @@ h4 {
 
 .studio-block-two {
   background-color: #e9eae2;
-  height: 35vw;
+  height: 36vw;
   justify-content: flex-start;
 }
 
@@ -644,10 +671,13 @@ h4 {
   color: #fd5000;
   text-transform: uppercase;
   font-size: 19px;
+}
+
+.info-plate .fa-arrow-left {
   margin-right: 38%;
 }
 
-.info-plate a:first-of-type {
+.info-plate .info-block-one .fa-arrow-left {
   margin-right: 34%;
 }
 
@@ -677,14 +707,15 @@ h4 {
 
 .news-plate {
   background-color: #e5e9df;
-  height: 35vw;
+  height: 36vw;
 }
 
 .news-plate .one-from-three {
   background-image: url(images/news.jpg);
   background-repeat: no-repeat;
-  background-size: 33vw;
-  background-position: 5px;
+  background-size: 34vw;
+  background-position: 0px;
+
 }
 
 .news-plate h2 {
@@ -707,34 +738,34 @@ h4 {
   margin-bottom: 5%;
 }
 
-.two-from-three h3 {
+.news-plate .two-from-three h3 {
   text-transform: uppercase;
   font-size: 32px;
   font-weight: 600;
 }
 
-.two-from-three .left-plate {
+.news-plate .two-from-three .left-plate {
   margin-left: 7%;
 }
 
-.two-from-three .right-plate {
+.news-plate .two-from-three .right-plate {
   margin-right: 7%;
 }
 
-.two-from-three .left-plate h3 {
+.news-plate .two-from-three .left-plate h3 {
   margin-bottom: 1%;
 }
 
-.two-from-three .right-plate h3 {
+.news-plate .two-from-three .right-plate h3 {
   margin-bottom: 7%;
   margin-right: 6%;
 }
 
-.two-from-three span {
+.news-plate .two-from-three span {
   margin-bottom: 4%;
 }
 
-.two-from-three p {
+.news-plate .two-from-three p {
   color: #6a6969;
   font-size: 17px;
   font-weight: 400;
@@ -742,7 +773,7 @@ h4 {
   margin-bottom: 3%;
 }
 
-.two-from-three .link {
+.news-plate .two-from-three .link {
   text-transform: uppercase;
   font-size: 15px;
   margin-left: 85%;
@@ -811,6 +842,10 @@ h4 {
 
 .footer-logo .social-network {
   margin-bottom: 62%;
+}
+
+.footer-logo .icon a {
+  color: #7acec3;
 }
 
 .footer-right .footer-info {
