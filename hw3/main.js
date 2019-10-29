@@ -27,9 +27,15 @@ class Tamagochi {
     }
 
     angryPikachu() {
-        document.getElementById('pikachu').src = 'pikachu-angry.png';
-        document.getElementById('pikachu').style.width = '35%';
+        document.getElementById('pikachu').style.display = 'none';
+        document.getElementById('pikachu-angry').style.display = 'block';
     }
+
+    goodPikachu() {
+        document.getElementById('pikachu-angry').style.display = 'none';
+        document.getElementById('pikachu').style.display = 'block';
+    }
+
 
     changeParameter(value, parameter) {
         let newValue = parameter + value;
@@ -41,6 +47,7 @@ class Tamagochi {
             return newValue;
         }
     }
+
     control(val) {
         if (val === 0 && this.health > 0) {
             this.health -= 1;
@@ -51,33 +58,44 @@ class Tamagochi {
     }
 
     controlHealth() {
-        if (this.health > 20 && this.health < 30) {
+        if (this.health < 30) {
             this.angryPikachu();
+            this.saySomething('I\'m feel bad, cure me')
         }
         if (this.health >= 40) {
-            document.getElementById('pikachu').src = 'pikachu.png';
-            document.getElementById('pikachu').style.width = '50%';
+            this.goodPikachu();
         }
     }
 
     life() {
-        this.happiness = this.changeParameter(-2, this.happiness);
+        this.happiness = this.changeParameter(-1, this.happiness);
         if (this.happiness > 35 && this.happiness < 40) {
+            this.saySomething('I\'m sad, funny with me!');
         }
         this.control(this.happiness);
 
         this.hungry = this.changeParameter(2, this.hungry);
-        if (this.hungry >= 80 && this.hungry < 90) {
+        if (this.hungry > 65 && this.hungry < 75) {
+            this.saySomething('I\'m starving, feed me!');
         }
         this.control(this.hungry);
 
-        this.play = this.changeParameter(-2, this.play);
+        this.play = this.changeParameter(-1, this.play);
+        if (this.play > 55 && this.play < 60) {
+            this.saySomething('Play with me, I\'m bored!');
+        }
         this.control(this.play);
 
-        this.sleep = this.changeParameter(2, this.sleep);
+        this.sleep = this.changeParameter(1, this.sleep);
+        if (this.sleep > 75 && this.sleep < 85) {
+            this.saySomething('I want to sleep!');
+        }
         this.control(this.sleep);
 
-        this.energy = this.changeParameter(-2, this.energy);
+        this.energy = this.changeParameter(-0.5, this.energy);
+        if (this.energy > 30 && this.energy < 35) {
+            this.saySomething('I\'m very tired!');
+        }
         this.control(this.energy);
 
         this.drawLines();
@@ -91,7 +109,7 @@ class Tamagochi {
     feedTamagochi() {
         this.hungry = this.changeParameter(-5, this.hungry);
         this.energy = this.changeParameter(2, this.energy);
-        this.health = this.changeParameter(2, this.health);
+        this.health = this.changeParameter(1, this.health);
         this.happiness = this.changeParameter(1, this.happiness);
         this.saySomething('Yummy!');
         this.drawLines();
@@ -100,10 +118,10 @@ class Tamagochi {
     playWithTamagochi() {
         this.play = this.changeParameter(3, this.play);
         this.health = this.changeParameter(1, this.health);
-        this.happiness = this.changeParameter(3, this.happiness);
+        this.happiness = this.changeParameter(2, this.happiness);
         this.hungry = this.changeParameter(2, this.hungry);
         this.sleep = this.changeParameter(1, this.sleep);
-        this.energy = this.changeParameter(-3, this.energy);
+        this.energy = this.changeParameter(-2, this.energy);
         this.saySomething('I like to play!');
         this.drawLines();
     }
@@ -118,7 +136,7 @@ class Tamagochi {
 
     sleepTamagochi() {
         this.sleep = this.changeParameter(-20, this.sleep);
-        this.health = this.changeParameter(3, this.health);
+        this.health = this.changeParameter(2, this.health);
         this.hungry = this.changeParameter(3, this.hungry);
         this.energy = this.changeParameter(3, this.energy);
         this.saySomething('I slept well!');
@@ -142,4 +160,4 @@ let timerId = setInterval(function () {
         clearInterval(timerId);
         alert('Game over! Pikachu is dead!');
     }
-}, 3000);
+}, 1000);
