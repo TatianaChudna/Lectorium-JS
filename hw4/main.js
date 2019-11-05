@@ -36,50 +36,43 @@ console.log(flower.getName());
 2) myMap - тот же самый map
 3) mySort - тот же самый sort*/
 
-let myForEach = function (myArray, callback, thisArg) {
-    for (let i = 0; i < myArray.length; i++) {
-        callback.call(thisArg, myArray[i], i, myArray);
+let array = [4, 2, 5, 3, 1];
+
+Array.prototype.myForEach = function(callback) {
+    for (let i = 0; i < this.length; i++) {
+        callback.call(this[i]);
     }
 };
+array.myForEach(function() {
+    console.log(this * 2)
+});
 
-function multiplyNumbers(myArray) {
-    myForEach(myArray, function (number) {
-        console.log(number * 2);
-    }, this);
-}
 
-multiplyNumbers([4, 2, 5, 3, 1]);
-
-let myMap = function (myArray, callback, thisArg) {
+Array.prototype.myMap = function(callback) {
     let results = [];
-    for (let i = 0; i < myArray.length; i++) {
-        results.push(callback.call(thisArg, myArray[i], i, myArray));
+    for (let i = 0; i < this.length; i++) {
+        results.push(callback.call(this[i]));
     }
     return results;
-};
-
-function divideNumbers(myArray) {
-    myMap(myArray, function (number) {
-        console.log(number / 2);
-    });
 }
+console.log(array.myMap(function () {
+    return(this + 1);
+}))
 
-divideNumbers([4, 2, 5, 3, 1]);
 
-function mySort(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length; j++) {
-            if (arr[i] < arr[j]) {
-                let number = arr[i];
-                arr [i] = arr [j];
-                arr [j] = number;
+Array.prototype.mySort = function() {
+    for (let i = 0; i < this.length; i++) {
+        for (let j = 0; j < this.length; j++) {
+            if (this[i] < this[j]) {
+                let number = this[i];
+                this [i] = this [j];
+                this [j] = number;
             }
         }
     }
-    console.log(arr);
+    return this;
 }
-
-mySort([4, 2, 5, 3, 1]);
+console.log(array.mySort());
 
 /*On array 2 dimensional grid with R rows and C columns, we start at (r0, c0) facing east.
 Here, the north-west corner of the grid is at the first row and column, and the south-east corner of the grid is at the last row and column.
@@ -133,4 +126,3 @@ function findCoordinates(x, y, rows, cols) {
 findCoordinates(4, 1, 5, 6);
 findCoordinates(0, 0, 1, 4);
 console.log(result);
-
