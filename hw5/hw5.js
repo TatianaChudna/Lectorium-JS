@@ -16,41 +16,4 @@ Todo-list (with material design):
 К примеру, https://github.com/material-components/material-components-web
  */
 
-/*
-//Написать функцию debounce, которая возвращает функцию обертку, передающую оригинальной функции только последний вызов функции обертки за переданный интервал
-function debounce(log, delay) {
-    let timer;
-
-    return function () {
-        let args = arguments;
-
-        if (timer) {
-            clearTimeout(timer);
-        }
-        timer = setTimeout(function () {
-            log.apply(this, args);
-        }, delay);
-    };
-}
-
-function log(arguments) {
-    console.log(arguments);
-}
-
-let debouncedFirst = debounce(log, 500);
-let debouncedSecond = debounce(log, 500);
-let debouncedThird = debounce(log, 500);
-
-debouncedFirst('1');
-debouncedFirst('2');
-// --- 500 ms ---
-// '2'
-debouncedSecond('3');
-// --- 500 ms ---
-// '3'
-debouncedThird('4');
-debouncedThird('5');
-debouncedThird('6');
-// --- 500 ms ---
-// '6'
- */
+// mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
