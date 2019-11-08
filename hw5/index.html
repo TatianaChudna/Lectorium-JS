@@ -9,21 +9,28 @@
   <link rel="stylesheet" href="bundle.css">
 </head>
 <body>
-<p>Hello world</p>
-<button class="foo-button mdc-button">Button</button>
-<!--<div class="mdc-text-field">-->
-  <!--<input type="text" id="my-text-field" class="mdc-text-field__input">-->
-  <!--<label class="mdc-floating-label" for="my-text-field"></label>-->
-  <!--<div class="mdc-line-ripple"></div>-->
-<!--</div>-->
-<div>
-  <button class='mdc-button mdc-button--raised inline-demo-button mdc-ripple-upgraded'>Enter</button>
-  <button class="foo-button mdc-button">Remove</button>
-  <button class="foo-button mdc-button">Select</button>
-  <button class="foo-button mdc-button">Unselect</button>
-</div>
-<div>
-  <button class="foo-button mdc-button">Amount of selected todos</button>
+<div class="container">
+  <h1>My to-do list</h1>
+  <div class="mdc-text-field mdc-text-field--outlined">
+    <label for="text"></label>
+    <input id="text" type="text" placeholder="Enter your note" class=mdc-text-field__input">
+  </div>
+  <div class="list-wrapper">
+    <ul id="todos">
+      <li>
+        <label class="todo-text"><input type="checkbox">Create to-do list</label>
+      <li>
+      <label class="todo-text"><input type="checkbox">Add first note</label>
+       </li>
+    </ul>
+  </div>
+  <div id="buttons">
+    <button id="save" class="mdc-button mdc-button--raised inline-demo-button mdc-ripple-upgraded">Save</button>
+    <button id="remove" class="mdc-button mdc-button--raised inline-demo-button mdc-ripple-upgraded">Remove</button>
+    <button id="select" class="mdc-button mdc-button--raised inline-demo-button mdc-ripple-upgraded">Select</button>
+    <button id="unselect" class="mdc-button mdc-button--raised inline-demo-button mdc-ripple-upgraded">Unselect</button>
+    <button id="amount" class="mdc-button mdc-button--raised inline-demo-button mdc-ripple-upgraded">amount of selected todos</button>
+  </div>
 </div>
 
 <script src="bundle.js" async></script>
