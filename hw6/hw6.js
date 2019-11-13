@@ -121,3 +121,37 @@ console.log(missing([1, 4, 3]));                  // 2
 console.log(missing([2, 3, 4]));                  // 1
 console.log(missing([5, 1, 4, 2]));               // 3
 console.log(missing([1, 2, 3, 4]));               // undefined
+
+//9. isBalanced - Takes a string and returns true or false indicating whether its curly braces are balanced.
+function isBalanced(str) {
+        let stack = [];
+        let open = {
+            '{': '}',
+            '[': ']',
+            '(': ')'
+        };
+        let closed = {
+            '}': true,
+            ']': true,
+            ')': true
+        };
+
+        for (let i = 0; i < str.length; i++) {
+
+            let char = str[i];
+
+            if (open[char]) {
+                stack.push(char);
+            } else if (closed[char]) {
+                if (open[stack.pop()] !== char) return false;
+            }
+        }
+        return stack.length === 0;
+}
+
+console.log(isBalanced('}{'));                      // false
+console.log(isBalanced('{{}'));                     // false
+console.log(isBalanced('{}{}'));                    // false
+console.log(isBalanced('foo { bar { baz } boo }')); // true
+console.log(isBalanced('foo { bar { baz }'));       // false
+console.log(isBalanced('foo { bar } }'));          // false
