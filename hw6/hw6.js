@@ -69,3 +69,25 @@ function reverse(str) {
 }
 console.log(reverse(''));                         // ''
 console.log(reverse('abcdef'));                   // 'fedcba'
+
+//6. indexOf - Implement the indexOf function for arrays.
+
+function findIndex(array, callback) {
+    let {length} = array;
+
+    for (let i = 0; i < length; i++) {
+        let value = array[i];
+
+        if (callback(value, i, array)) {
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+function indexOf(array, searchedValue) {
+    return findIndex(array, value => value === searchedValue);
+}
+console.log(indexOf([1, 2, 3], 1) );              // 0
+console.log(indexOf([1, 2, 3], 4) );              // -1
