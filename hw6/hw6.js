@@ -28,3 +28,16 @@ function factorial(num) {
 console.log(factorial(0));                        // 1
 console.log(factorial(1));                        // 1
 console.log(factorial(6));                        // 720
+
+// 3. fib - Returns the nth Fibonacci number.
+function fib(number, a = 1, b = 0) {
+    if (number === 0) {
+        return b;
+    } else {
+        return fib(number - 1, b, a + b);
+    }
+}
+console.log(fib(0));                              // 0
+console.log(fib(1));                              // 1
+console.log(fib(10));                             // 55
+console.log(fib(20));                             // 6765
