@@ -106,14 +106,16 @@ console.log(isPalindrome('A man a plan a canal Panama'));// true
 //8. missing - Takes an unsorted array of unique numbers (ie. no repeats) from 1 through some number n, and returns the missing number in the sequence (there are either no missing numbers, or exactly one missing number). Can you do it in O(N) time? Hint: There’s a clever formula you can use.
 
 function missing(arr) {
-    let n = arr.length;
-
-    if (n > 0) {
-        let missingNumber = ((n + 2) * (n + 1)) / 2;
-        for (let i = 0; i < n; i++) {
-            missingNumber -= arr[i];
+    if (arr.length > 0) {
+        let sortArray = arr.sort();
+        let count = sortArray[arr.length - 1];
+        for (let i = 1; i <= count; i++) {
+            if (arr.indexOf(i) === -1) {
+                return i;
+            }
         }
-        return missingNumber;
+    } else {
+        return undefined;
     }
 }
 console.log(missing([]));                         // undefined
@@ -125,28 +127,27 @@ console.log(missing([1, 2, 3, 4]));               // undefined
 //9. isBalanced - Takes a string and returns true or false indicating whether its curly braces are balanced.
 function isBalanced(str) {
         let stack = [];
-        let open = {
-            '{': '}',
-            '[': ']',
-            '(': ')'
-        };
-        let closed = {
-            '}': true,
-            ']': true,
-            ')': true
-        };
+        let searchClosed = false;
 
         for (let i = 0; i < str.length; i++) {
-
             let char = str[i];
 
-            if (open[char]) {
+            if (char === '{') {
                 stack.push(char);
-            } else if (closed[char]) {
-                if (open[stack.pop()] !== char) return false;
+                if (searchClosed === true) {
+                    return false;
+                }
+            } else if (char === '}') {
+                searchClosed = true;
+
+                if (stack.length) {
+                    stack.pop();
+                } else {
+                    return false;
+                }
             }
         }
-        return stack.length === 0;
+    return stack.length === 0;
 }
 
 console.log(isBalanced('}{'));                      // false
@@ -154,4 +155,4 @@ console.log(isBalanced('{{}'));                     // false
 console.log(isBalanced('{}{}'));                    // false
 console.log(isBalanced('foo { bar { baz } boo }')); // true
 console.log(isBalanced('foo { bar { baz }'));       // false
-console.log(isBalanced('foo { bar } }'));          // false
+console.log(isBalanced('foo { bar } }'));           // false
