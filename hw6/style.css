@@ -1,0 +1,21 @@
+img {
+  width: 18%;
+  display: none;
+}
+#cat1 {
+  display: block;
+}
+
+#cat2 {
+  width: 20%;
+}
+
+button {
+  width: 5%;
+  padding: 12px;
+  background: #c1fae2;
+  border-radius: 13%;
+  outline: none;
+  border: 1px solid #4a7764;
+  cursor: pointer;
+}
