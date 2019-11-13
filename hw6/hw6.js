@@ -41,3 +41,16 @@ console.log(fib(0));                              // 0
 console.log(fib(1));                              // 1
 console.log(fib(10));                             // 55
 console.log(fib(20));                             // 6765
+
+function isSorted(array) {
+    let sorted = true;
+    for (let i = 0; i < array.length - 1; i++) {
+        if (array[i] > array[i + 1]) {
+            sorted = false;
+        }
+    }
+    return sorted;
+}
+console.log(isSorted([]));                         // true
+console.log(isSorted([-Infinity, -5, 0, 3, 9]) );  // true
+console.log(isSorted([3, 9, -3, 10]));             // false
