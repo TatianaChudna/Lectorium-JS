@@ -91,3 +91,13 @@ function indexOf(array, searchedValue) {
 }
 console.log(indexOf([1, 2, 3], 1) );              // 0
 console.log(indexOf([1, 2, 3], 4) );              // -1
+
+//7.  isPalindrome - Return true or false indicating whether the given string is a plaindrone (case and space insensitive).
+function isPalindrome(string) {
+    let str = string.replace(/[^a-zA-Z0-9]+/gi, '').toLowerCase();
+    return str ===  str.split('').reverse().join('');
+}
+console.log(isPalindrome('')); // true
+console.log(isPalindrome('abcdcba'));// true
+console.log(isPalindrome('abcd') );// false
+console.log(isPalindrome('A man a plan a canal Panama'));// true
