@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 
 export default class Footer extends Component {
-
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="footer-container">
                     <ul className="footer-content">
                         <li className="location">
@@ -23,7 +22,7 @@ export default class Footer extends Component {
                         </li>
                     </ul>
                 </div>
-            </React.Fragment>
+            </>
         )
     }
 }

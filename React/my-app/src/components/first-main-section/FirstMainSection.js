@@ -1,14 +1,8 @@
 import React, {Component} from 'react';
 
 export default class FirstMainSection extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
-    //
     render() {
-
         let array = ["img1", "img2", "img3", "img4", "img5"];
-
         let images = array.map(image => {
             return <img key={image} src={(`/images/${image}.jpg`)} alt="" />
         });

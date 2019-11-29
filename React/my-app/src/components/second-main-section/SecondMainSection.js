@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 export default class SecondMainSection extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+    constructor(props) {
+        super(props);
+        this.money = 'money';
+    }
 
     handlerButton = () => {
-        alert('You did it!')
+        alert('You did it!');
     };
 
     render() {
@@ -17,11 +18,11 @@ export default class SecondMainSection extends Component {
                         <h2>Have your own boat?</h2>
                         <p>Navigare necesse est, vivere non est necesse</p>
                         <div className="link-button">
-                            <button onClick={this.handlerButton}>Make money with your boat!</button>
+                            <button onClick={this.handlerButton}>Make {this.money} with your boat!</button>
                         </div>
                     </div>
                 </div>
             </>
-        )
+        );
     }
 }

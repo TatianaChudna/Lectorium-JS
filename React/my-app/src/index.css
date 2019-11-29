@@ -12,12 +12,6 @@ code {
     monospace;
 }
 
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 h1 {
   cursor: pointer;
 }
@@ -47,7 +41,6 @@ button:hover {
 .main-menu {
   display: flex;
   justify-content: space-between;
-  padding-top: 36px;
   max-width: 1496px;
   text-align: center;
   margin: 0 auto;
@@ -60,6 +53,7 @@ button:hover {
 .navigation-menu li {
   display: inline-block;
   margin-right: 24px;
+  cursor: pointer;
 }
 
 .navigation-menu li:last-of-type {
@@ -69,19 +63,19 @@ button:hover {
   border-radius: 5px;
 }
 
-.navigation-menu li a {
+.navigation-menu li p {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1.54px;
-  padding: 12px 0;
-  display: block;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .navigation-menu li:hover {
   border-color: #e7434e;
 }
 
-.navigation-menu li:hover a {
+.navigation-menu li:hover p {
   color: #e7434e;
 }
 
@@ -103,7 +97,7 @@ button:hover {
 .banner p {
   font-size: 30px;
   letter-spacing: 1.2px;
-  margin-bottom: 32px;
+  margin-bottom: 47px;
 }
 
 /*Header end*/
@@ -138,12 +132,8 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   list-style: none;
-}
-
-.plate-section li {
-  position: relative;
 }
 
 .plate-section img:hover {
@@ -169,17 +159,6 @@ button:hover {
   background: url("/images/main-img.jpg") no-repeat;
 }
 
-.second-section .link {
-  color: #fff;
-  background-color: #e7434e;
-  font-weight: 400;
-}
-
-.second-section .link:hover {
-  background-color: #fff;
-  color: #000;
-}
-
 .second-section .banner {
   margin: 0 auto;
   padding-top: 178px;
@@ -193,8 +172,7 @@ button:hover {
   margin: 0 auto;
 }
 
-
-
+/*Main and*/
 /*Footer start*/
 
 .footer-container {
@@ -229,3 +207,5 @@ button:hover {
   font-size: 14px;
   line-height: 32px;
 }
+
+/*Footer end*/
