@@ -23,7 +23,7 @@ h1 {
 }
 
 button {
-  width: 13%;
+  width: 40%;
   padding: 14px;
   border-radius: 5px;
   font-size: 22px;
@@ -107,6 +107,40 @@ button:hover {
 }
 
 /*Header end*/
+/*Main start*/
+
+.second-section {
+  height: 600px;
+  width: 100%;
+  background: url("/images/main-img.jpg") no-repeat;
+}
+
+.second-section .link {
+  color: #fff;
+  background-color: #e7434e;
+  font-weight: 400;
+}
+
+.second-section .link:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.second-section .banner {
+  margin: 0 auto;
+  padding-top: 178px;
+}
+
+.second-section p {
+  margin-bottom: 87px;
+}
+
+.second-section .link-button {
+  margin: 0 auto;
+}
+
+
+
 /*Footer start*/
 
 .footer-container {
