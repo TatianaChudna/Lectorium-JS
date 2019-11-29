@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-export default class Second_main_section extends Component {
-    constructor(props) {
-        super(props);
-    }
+export default class SecondMainSection extends Component {
+    // constructor(props) {
+    //     super(props);
+    // }
 
     handlerButton = () => {
         alert('You did it!')

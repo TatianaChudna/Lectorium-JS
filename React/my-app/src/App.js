@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from './components/header/Header.js';
-import Second_main_section from './components/second-main-section/Second_main_section';
+import FirstMainSection from './components/first-main-section/FirstMainSection';
+import SecondMainSection from './components/second-main-section/SecondMainSection';
 import Footer from './components/footer/Footer';
 
 function App() {
   return (
       <>
           <Header/>
-          <Second_main_section/>
+          <FirstMainSection/>
+          <SecondMainSection/>
           <Footer/>
       </>
   )
