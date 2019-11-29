@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+h1 {
+  cursor: pointer;
+}
+
+button {
+  width: 13%;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #fff;
+  background: #e7434e;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #005253;
+}
+
+.header-wrapper {
+  height: 600px;
+  width: 100%;
+  background: url("/images/header-img.jpg");
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  max-width: 1496px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navigation-menu {
+  margin-left: 49%;
+}
+
+.navigation-menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.navigation-menu li:last-of-type {
+  width: 146px;
+  margin-right: 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.navigation-menu li a {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.54px;
+  padding: 12px 0;
+  display: block;
+}
+
+.navigation-menu li:hover {
+  border-color: #e7434e;
+}
+
+.navigation-menu li:hover a {
+  color: #e7434e;
+}
+
+.banner {
+  max-width: 945px;
+  margin: 210px auto 0;
+  text-align: center;
+  color: #f9fafe;
+  text-transform: uppercase;
+}
+
+.banner h2 {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 4.54px;
+  margin-bottom: 16px;
+}
+
+.banner p {
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  margin-bottom: 32px;
+}
+
+/*Header end*/
+/*Footer start*/
+
+.footer-container {
+  display: flex;
+  background-color: #404040;
+}
+
+.footer-container .footer-content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1163px;
+  padding-bottom: 47px;
+  list-style: none;
+  justify-content: space-between;
+  display: inline-flex;
+}
+
+.footer-container .footer-content > li {
+  width: 250px;
+}
+
+.footer-container .footer-content h6 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-container .footer-content p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 32px;
+}
